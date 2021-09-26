@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Cart from '../Cart/Cart';
 import Item from '../Item/Item';
 
@@ -16,8 +16,8 @@ const Cards = () => {
         setCart(newCart)
     }
     return (
-        <Container>
-            <Row>
+        <div className='mx-5'>
+            <Row className='mb-5'>
                 <Col xs={7} md={8}>
                     <Row>
                         {
@@ -29,7 +29,7 @@ const Cards = () => {
                     <Cart item={cart}/>
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 };
 

@@ -4,7 +4,7 @@ import CartPopup from './CartPopup/CartPopup';
 
 const Cart = (props) => {
     return (
-        <div className='cart'>
+        <div className='cart border'>
             <CartPopup item={props.item}/>
         </div>
     );
