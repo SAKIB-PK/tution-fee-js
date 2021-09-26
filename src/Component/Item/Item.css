@@ -1,0 +1,13 @@
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 4px auto 0;
+}
+.cart-item {
+  /* width: 18rem; */
+  height: 450px;
+}
+.font-awesome {
+  font-size: 40px;
+}
