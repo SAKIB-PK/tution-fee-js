@@ -19,7 +19,7 @@ const Item = (props) => {
                         Gender: <strong>{gender}</strong> <br />
                         Email: <small><strong>{email}</strong></small> <br />
                     </Card.Text>
-                    <Button variant='warning' onClick={()=> props.hundle(props.item)}><FontAwesomeIcon icon={faGraduationCap}> </FontAwesomeIcon> Tution Start</Button>
+                    <Button variant='warning'  onClick={()=> props.hundle(props.item)}><FontAwesomeIcon icon={faGraduationCap}> </FontAwesomeIcon> Tution Start</Button>
                     <ul className="list-inline justify-content-between d-flex ">
                         <li className="list-inline-item font-awesome"> <a href="#link"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a> </li>
                         <li className="list-inline-item font-awesome"><a href="#link"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a> </li>

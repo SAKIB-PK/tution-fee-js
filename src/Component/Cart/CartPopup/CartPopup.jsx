@@ -9,14 +9,17 @@ const CartPopup = (props) => {
          totallPrice += newPrice
     }
     return (
-            <div className=" ">
-                <div className="row d-flex">
-                    <div className="d-flex pad-left">
-                    
-                    </div>
-                </div>
+            <div>
+                <h2 className='text-danger text-center mb-3'>Tutor List-</h2>
                 <h4 className="mob-text">Totall Tution : {item.length}</h4>
                 <h5 className="mob-text">Totall Price: ৳ {totallPrice.toFixed(2)}</h5>
+                <div className="row d-flex border-top mt-3 pt-5">
+                    {item.map((res,i)=>(
+                                <div key={i} className="d-flex pad-left">
+                                    <p>{res.first_name} {res.last_name} -- <span className="text-danger">৳ {res.tution_fee}</span> </p>
+                                </div>
+                    ))}
+                </div>
             </div>
     )
 };
